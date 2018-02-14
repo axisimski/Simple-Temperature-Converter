@@ -6,13 +6,18 @@ package axisimski.tempconverter;
 
 public class TempConv {
 
-    public static double c2f(double cdegrees){
+    public static long c2f(long cdegrees){
 
-        return  (cdegrees*1.8)+32;
+        double deg=  (cdegrees*1.8)+32;
+        long r = (long) Math.round(deg);
+        return  r;
     }
 
-    public static double f2c(double fdegrees){
+    public static long f2c(long fdegrees){
 
-        return  (fdegrees-32)/1.8;
+        double deg=(fdegrees-32)/1.8;
+
+        long r = (long) Math.round(deg);
+        return  r;
     }
 }
